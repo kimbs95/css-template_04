@@ -444,8 +444,67 @@ section.me ul.in p::before{
     /* 마우스 를 가져다 되면 손바닥으로 바뀜 */
 }
 
+section.sns  {
+    /* background: green;  */
+    width: 74%;
+    margin: 0 auto;   
+
+}
+
+section.sns ul {
+    margin: 50px auto;
+    
+}
+
+section.sns ul li  {
+    float: left;
+    width: 32%;
+    box-sizing: border-box;
+    /* background: green; */
+    margin-right: 2%;
+}
+section.sns ul li:last-child {
+    margin-right: 0;
+}
+
+section.sns ul li .img-box {
+    /* width: 33.3333px; */
+    height: 200px;
+    overflow: hidden;
+}
 
 
+section.sns ul li .img-box img {
+    width: 100%;    
+}
+
+section.sns ul .bottom {
+    background: white;
+    margin-top: 20px;
+}
+
+section.sns ul .bottom p {
+    margin-bottom: 15px;
+}
+
+section.sns ul .bottom .color{
+    color: orange;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+section.sns ul .bottom .time{
+    color: #aaa;
+}
+
+
+
+
+footer .inner {
+    background: green;
+    width: 74%;
+    margin: 0 auto;
+}
 
 
 
