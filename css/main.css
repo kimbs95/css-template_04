@@ -444,24 +444,28 @@ section.me ul.in p::before{
     /* 마우스 를 가져다 되면 손바닥으로 바뀜 */
 }
 
+/* section sns style */
+
 section.sns  {
     /* background: green;  */
-    width: 74%;
-    margin: 0 auto;   
-
+    /* width: 74%; */
+    /* margin: 0 auto;    */
+    margin-bottom: 50px;
 }
 
 section.sns ul {
-    margin: 50px auto;
     
+    width: 74%;
+    margin: 50px auto;
 }
 
 section.sns ul li  {
     float: left;
     width: 32%;
+    /* border: 3px solid #000; */
     box-sizing: border-box;
-    /* background: green; */
     margin-right: 2%;
+    /* background: green; */
 }
 section.sns ul li:last-child {
     margin-right: 0;
@@ -469,32 +473,76 @@ section.sns ul li:last-child {
 
 section.sns ul li .img-box {
     /* width: 33.3333px; */
-    height: 200px;
+    height: 251px;
+    /* border: 3px solid gray; */
+    box-sizing: border-box;
     overflow: hidden;
+    position: relative;
+}
+/* hover 효과 gost */
+
+section.sns ul li .img-box:after{
+    content: 'blog';
+    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    border: 1px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    padding: 5px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    transition: .7s;
+}
+section.sns ul li a:hover .img-box:after{
+    opacity: 1;
 }
 
+section.sns ul li .img-box::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: rgba(255, 131 , 66, 0.85);
+    position: absolute;
+    transition: 2s;
+}
+
+section.sns ul li a:hover .img-box::before{
+    width: 100%;
+    
+}
 
 section.sns ul li .img-box img {
     width: 100%;    
 }
 
-section.sns ul .bottom {
+section.sns ul li .bottom {
     background: white;
-    margin-top: 20px;
+    padding: 20px 0 20px 30px;
+    /* margin-top: 20px; */
 }
 
 section.sns ul .bottom p {
     margin-bottom: 15px;
+    font-size: 18px;
 }
 
-section.sns ul .bottom .color{
+section.sns ul .bottom p.color{
     color: orange;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-section.sns ul .bottom .time{
+section.sns ul .bottom p.time{
     color: #aaa;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+section.sns ul .bottom p.time i{
+    margin-right: 10px;
 }
 
 
